@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=KoHo&display=swap" rel="stylesheet"> 
+    <title>Survey</title>
+</head>
+<body>
+    <main id="main">
+        <header>
+            <h1 id="title">Survey for freeCodeCamp</h1>   
+            <p id="description">This is the description</p>     
+        </header>
+        <form id="survey-form">
+        
+            <label for="name" id="name-label"><p>Name:</p></label>
+            <input type="text" id="name" placeholder="Enter Your Full Name" required>
+
+            <label for="email" id="email-label"><p>Email:</p></label>
+            <input type="email" id="email" placeholder="Enter Your Email" required>
+
+            <label for="number" id="number-label"><p>Age:(Optional)</p></label>
+            <input type="number" id="number" min="10" max="99" placeholder="Enter Your Age">
+
+            <label for="dropdown" id="occupation"><p>What best describes you?</p></label>
+            <select id="dropdown" autocomplete="off">
+                <option value="0" disabled selected="selected" style="color: grey;">-Please Select-</option>
+                <option value="1">Full-Time Student</option>
+                <option value="2">Part-Time Student</option>
+                <option value="3">Full-Time Employed</option>
+                <option value="4">Part-Time Employed</option>
+                <option value="5">Prefer not to say</option>
+            </select> <br>
+            
+            <label for="recommend"> <p>Would you recommend freeCodeCamp to a friend?</p> </label>
+            <div id="recommend" class="check">                
+                <input type="radio" id="name_1" name="recommend" value="1"> 
+                <label for="name_1"> Definitely </label> <br>
+                <input type="radio" id="name_2" name="recommend" value="2">
+                <label for="name_2"> Maybe </label> <br>
+                <input type="radio" id="name_3" name="recommend" value="3">
+                <label for="name_3"> Not Sure</label> <br>
+            </div>
+            
+            <label for="improvement"> <p>Any comment or suggestion?</p> </label>
+            <div id="improvement" class="check">
+                <input type="checkbox" id="option1" name="improvement" value="Front-end Projects">
+                <span class="checkmark"></span>
+                <label for="vehicle1"> Front-end Projects</label> <br>
+                <input type="checkbox" id="option2" name="improvement" value="Back-end Projects">
+                <span class="checkmark"></span>
+                <label for="vehicle2"> Back-end Projects</label> <br>
+                <input type="checkbox" id="option3" name="improvement" value="Data Visualization">
+                <label for="vehicle1"> Data Visualization</label> <br>
+                <input type="checkbox" id="option4" name="improvement" value="Challenges">
+                <label for="vehicle2"> Challenges</label> <br>
+                <input type="checkbox" id="option5" name="improvement" value="Open Source Community">
+                <label for="vehicle1"> Open Source Community</label> <br>
+                <input type="checkbox" id="option6" name="improvement" value="Gitter help rooms">
+                <label for="vehicle2"> Gitter help rooms</label> <br>
+                <input type="checkbox" id="option7" name="improvement" value="Videos"> 
+                <label for="vehicle1"> Videos</label> <br>
+                <input type="checkbox" id="option8" name="improvement" value="Wiki">
+                <label for="vehicle2"> Wiki</label> <br>
+            </div>
+            <label for="textarea"> <p>Any comment or suggestion?</p> </label> 
+            <textarea id="textarea" rows="3" cols="50" placeholder="Please Give Your Suggestions"></textarea> <br>
+
+            <input type="submit" id="submit" value='Submit'>
+
+        </form>       
+    </main>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+</body>
+</html>

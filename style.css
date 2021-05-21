@@ -1,0 +1,123 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#main{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background: #e0e0e3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'KoHo', sans-serif;
+}
+
+#title{
+    margin:0;    
+}
+
+#description{
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    align-self: stretch;
+    background-color: #232339;
+    color: #F0F0F1;
+    position: sticky;
+    top: 0;
+}
+
+#survey-form{
+    margin: 2%;
+    padding: 2%;
+    color: #F0F0F1;
+    font-size: 175%;
+
+    background: linear-gradient(
+      to right bottom,
+      rgba(3, 3, 28, 0.7),
+      rgba(3, 3, 28, 0.5)
+    );
+    border-radius: 1rem;
+
+}
+
+input[type="text"], input[type="email"],
+input[type="number"], select{
+    width: 95%;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    border-radius: 0.6rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+select{
+    width: 100.5%;
+}
+
+input, select{
+    margin-bottom: 0.8rem;
+}
+
+.check > input{
+    margin-bottom: 0;
+}
+
+input[type="text"]:hover, input[type="email"]:hover,
+input[type="number"]:hover, select:hover{
+    box-shadow: 0 0 0.25rem 0.10rem #F0F0F1;    
+}
+
+input[type="text"]:focus{
+    box-shadow: 0 0 0.25rem 0.10rem #F0F0F1;
+}
+
+select{
+    background-color: #f0f0f1; 
+}
+
+/* To Remove the Arrow From Number*/
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+/**/
+
+.check{
+    padding-left:1em;
+}
+
+.check > label{
+    font-size: 1.25rem;
+}
+
+textarea{
+    width: 100%;
+    font-size: 1.25rem;
+    background: #f0f0f1;
+}
+
+input[type="submit"]{
+    width: 101%;
+    margin-top: 1.5rem;
+    padding: 0.5em;
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #232339;
+    background: #e0e0e3;
+}
+
+input[type="submit"]:hover{
+    background: #F0F0F1;
+    box-shadow: 0 0 0.25rem 0.05rem #fff;
+    transform: scale(1.025,1.025);    
+}
