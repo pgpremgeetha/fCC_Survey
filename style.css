@@ -107,6 +107,7 @@ textarea{
 }
 
 input[type="submit"]{
+    font-family: 'KoHo', sans-serif;
     width: 101%;
     margin-top: 1.5rem;
     padding: 0.5em;
@@ -114,10 +115,10 @@ input[type="submit"]{
     font-weight: bold;
     color: #232339;
     background: #e0e0e3;
+
 }
 
 input[type="submit"]:hover{
-    background: #F0F0F1;
     box-shadow: 0 0 0.25rem 0.05rem #fff;
     transform: scale(1.025,1.025);    
 }
